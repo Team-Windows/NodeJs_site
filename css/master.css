@@ -1,0 +1,19 @@
+.formulaire{
+  margin: auto  ;
+  padding: 15px;
+  width: 60%;
+  position: relative;
+  top : 250px;
+  border: 1px solid #000000;
+  border-radius: 5px
+}
+
+
+.second_formulaire{
+  padding-left: 15px;
+  border-left: 1px solid black;
+}
+
+form > span.input{
+  width: 150px;
+}
