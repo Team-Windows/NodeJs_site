@@ -1,24 +1,36 @@
-ul#list_group li{
-  padding: 2.5px 10px;
-}
+@import url('https://fonts.googleapis.com/css?family=Roboto|Satisfy&display=swap');
+
+
 body{
   background:#111111;
+  font-family: 'Roboto', sans-serif;
+}
+legend {
+  font-family: 'Satisfy', cursive;
+  text-decoration: none;
+  color: #2b1d0e;
 }
 
-#list_group{
-  margin: auto 25%;
-  margin-top:50px;
-  border-color: Black;
-  border: 2px solid;
+fieldset{
+  border-color: darkgreen;
+  border: 1.5px solid;
   border-radius: 10px;
   padding: 5px;
 }
-#list_group li:hover{
-  background-color: #aaaaaa;
+
+ul#groupe_list li{
+  padding: 2.5px 10px;
+  padding-right: 5px;
 }
-#list_group li.select{
-  background-color: #888888;
+
+#groupe_list li:hover{
+  background-color: #caaa;
 }
+#groupe_list .select{
+  background-color: #c888;
+}
+
+
 
 input[type="text"]{
   width:         auto;
@@ -35,32 +47,48 @@ input[type='submit']{
   background:    #eee;
   font-size:     20px;
   font-weight:   bold;
+  border: none;
+  border: 1px solid #aaa;
+  border-radius: 10x;
   text-shadow:   1px 0 0 #eee, -1px 0 0 #eee, 0 1px 0 #EEE, 0 -1px 0 #eee, 1px 1px #eee, -1px -1px 0 #eee, 1px -1px 0 #eee, -1px 1px 0 #eee;
 }
-input[type='submit']:before{
+/* input[type='submit']:before{
   border-left:       solid 70px transparent;
   border-right:      solid 70px transparent;
   border-bottom:     solid 70px #fff;
-  -ms-transform:     rotate(-5deg);          /* IE 9 */
-  -webkit-transform: rotate(-5deg);          /* Safari */
+  -ms-transform:     rotate(-5deg);          
+  -webkit-transform: rotate(-5deg);          
   transform:         rotate(-5deg);
   -webkit-box-shadow:        0 0 30px #333;
-          box-shadow:        0 0 30px #333;
+  box-shadow:        0 0 30px #333;
   height:            0;
   width:             0;
-}
+} */
 
 
 .background-color-active{
-  background-color: #e5ffff;
+  background-color: linen;
 }
 
 #content{
   position: relative;
   top : 100px;
   padding: 20px 30px;
-    margin: auto 75px;
+  margin: auto 75px;
+  border-radius: 10px;
+  border: 5px groove darkred;
+
 }
+#list_group li.select{
+  background-color: #888888;
+}
+
+input[type="text"]{
+  width:         auto;
+  height:        30px;
+  margin:        0 auto;
+  border:        solid 1px #ededed;
+  border-radius: 10px;
 
 .aligne_end{
   -webkit-box-align: end;
@@ -69,6 +97,41 @@ input[type='submit']:before{
 }
 
 .flex_row > li {
-  margin: 0px 5px
+  margin: 0px 5px;
+}
+
+.flex_row > div{
+  margin: 5px 0px; 
+
+}
+
+
+body{margin:0;height:100%;}
+#canvas{
+    background-image: linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    background-image: -o-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    background-image: -moz-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    background-image: -webkit-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    background-image: -ms-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0, rgb(105,173,212)),
+        color-stop(0.84, rgb(23,82,145))
+    );
+} 
+
+.add-group-button {
+  border: none; 
+  display: block;
+  background-color:#1F618D; 
+  color: white; 
+  cursor: pointer; 
+  padding: 5px; 
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 10px;
 
 }
