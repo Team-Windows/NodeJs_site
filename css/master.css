@@ -1,3 +1,7 @@
+body{
+  background-color: #ffffff
+}
+
 .formulaire{
   margin: auto  ;
   padding: 15px;
@@ -16,4 +20,9 @@
 
 form > span.input{
   width: 150px;
+}
+
+#list_group{
+  margin: auto ;
+  padding: auto 200px;
 }

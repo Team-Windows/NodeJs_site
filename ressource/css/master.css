@@ -1,19 +1,74 @@
-.formulaire{
-  margin: auto  ;
-  padding: 15px;
-  width: 60%;
+ul#list_group li{
+  padding: 2.5px 10px;
+}
+body{
+  background:#111111;
+}
+
+#list_group{
+  margin: auto 25%;
+  margin-top:50px;
+  border-color: Black;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 5px;
+}
+#list_group li:hover{
+  background-color: #aaaaaa;
+}
+#list_group li.select{
+  background-color: #888888;
+}
+
+input[type="text"]{
+  width:         auto;
+  height:        30px;
+  margin:        0 auto;
+  border:        solid 1px #ededed;
+  border-radius: 10px;
+
+
+}
+
+input[type='submit']{
+  position:      relative;
+  background:    #eee;
+  font-size:     20px;
+  font-weight:   bold;
+  text-shadow:   1px 0 0 #eee, -1px 0 0 #eee, 0 1px 0 #EEE, 0 -1px 0 #eee, 1px 1px #eee, -1px -1px 0 #eee, 1px -1px 0 #eee, -1px 1px 0 #eee;
+}
+input[type='submit']:before{
+  border-left:       solid 70px transparent;
+  border-right:      solid 70px transparent;
+  border-bottom:     solid 70px #fff;
+  -ms-transform:     rotate(-5deg);          /* IE 9 */
+  -webkit-transform: rotate(-5deg);          /* Safari */
+  transform:         rotate(-5deg);
+  -webkit-box-shadow:        0 0 30px #333;
+          box-shadow:        0 0 30px #333;
+  height:            0;
+  width:             0;
+}
+
+
+.background-color-active{
+  background-color: #e5ffff;
+}
+
+#content{
   position: relative;
-  top : 250px;
-  border: 1px solid #000000;
-  border-radius: 5px
+  top : 100px;
+  padding: 20px 30px;
+    margin: auto 75px;
 }
 
-
-.second_formulaire{
-  padding-left: 15px;
-  border-left: 1px solid black;
+.aligne_end{
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
-form > span.input{
-  width: 150px;
+.flex_row > li {
+  margin: 0px 5px
+
 }
