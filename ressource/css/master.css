@@ -79,6 +79,16 @@ input[type='submit']{
   border: 5px groove darkred;
 
 }
+#list_group li.select{
+  background-color: #888888;
+}
+
+input[type="text"]{
+  width:         auto;
+  height:        30px;
+  margin:        0 auto;
+  border:        solid 1px #ededed;
+  border-radius: 10px;
 
 .aligne_end{
   -webkit-box-align: end;
@@ -92,6 +102,7 @@ input[type='submit']{
 
 .flex_row > div{
   margin: 5px 0px; 
+
 }
 
 
